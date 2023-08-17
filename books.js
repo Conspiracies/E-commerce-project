@@ -58,13 +58,13 @@ function ratingsHTML (rating) {
          ratingHtml += '<i class="fas fa-star"></i>\n'
     }
     if (!Number.isInteger(rating)) {
-        ratingHtml += '<i class="fas fa-star-half-alt"></i>\n'
+        ratingHtml += '<i class="fas fa-star-half-alt"></i\n>'
     }
     return ratingHtml;
 }
 
 function filterBooks(event) {
-        renderBooks(event.target.value)
+    renderBooks(event.target.value)
 }
 
 setTimeout(() => {
@@ -165,6 +165,6 @@ function getBooks() {
                     rating: 4.5,
                 },
             ]);
-        },1000);
+        },500);
     });
 }

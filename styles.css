@@ -450,6 +450,11 @@ BOOKS PAGE
   .fa-spinner {
     animation: rotate 500ms infinite linear;
   }
+
+  .book__ratings,
+  .book__price {
+    font-size: 20px;
+  }
   
   @keyframes rotate {
     0% {
