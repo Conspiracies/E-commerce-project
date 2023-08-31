@@ -71,6 +71,14 @@ setTimeout(() => {
     renderBooks();
 });
 
+function openMenu() {
+    document.body.classList += " menu--open"
+}
+
+function closeMenu(){
+    document.body.classList.remove('menu--open')
+}
+
 // FAKE DATA
 function getBooks() {
     return new Promise ((resolve) => {
